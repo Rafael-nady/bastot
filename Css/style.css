@@ -1,0 +1,73 @@
+﻿/* خلفية ال Canvas */
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+/* تنسيق الحاوية */
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 150px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* العنوان */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px #ffcade;
+}
+
+/* الرسالة */
+.message {
+    white-space: pre-line; /* عشان \n تظهر أسطر جديدة */
+    font-size: 1.3rem;
+    line-height: 1.6;
+    min-height: 140px;
+    margin-bottom: 30px;
+}
+
+/* إخفاء الرسالة */
+.hidden {
+    display: none;
+}
+
+/* الأزرار */
+.btn {
+    background: white;
+    color: #ff4f81;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 79, 129, 0.6);
+}
+
+    .btn:hover {
+        background-color: #ffe6ee;
+        transform: scale(1.1);
+    }
+
+/* توقيع */
+.signature {
+    margin-top: 40px;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 0 0 4px #ffa6bf;
+    font-size: 1.1rem;
+}
